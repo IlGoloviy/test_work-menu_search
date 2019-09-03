@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+    src: local('Material Icons'),
+        local('MaterialIcons-Regular')
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #4876c3;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-weight: 100;
+    margin: 10px 0;
+}
+
+.logo span {
+    color: red;
+    font-family: inherit;
+}
+
+.info-block i {
+    margin-left: 20px;
+}
+
+.add-icon {
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 675px;
+}
+
+.menu .nav-icon {
+    display: none;
+}
+
+.menu .logo-small {
+    display: none;
+}
+
+.menu-content {
+    display: flex;
+}
+
+.menu-content li {
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 16px;
+    margin-right: 35px;
+}
+
+.search {
+    width: 26px;
+    cursor: pointer;
+}
+
+.menu form {
+    width: 100%;
+    position: relative;
+}
+
+.menu form input {
+    font-size: 14px;
+    padding: 10px 7px;
+    border: none;   
+}
+
+.input-search {
+    width: calc(100% - 89px);
+    background: #fff;
+}
+
+.btn-search {
+    background: #ffc120;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.details {
+    position: absolute;
+    background: #fff;
+    left: 0px;
+    top: 40px;
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.43);
+    padding: 15px;
+    color: #000;
+}
+
+.details-row {
+    display: flex;
+    align-items: center;
+}
+.details-row-btw {
+    margin: 15px 0;
+}
+
+.det-check {
+    margin-right: 5px;
+}
+
+.menu form label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.menu form .det-avtor {
+    border: 1px solid #c4ced5;
+    width: 100%;
+}
+
+.menu form select {
+    padding: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    border: 1px solid #c4ced5;
+    background: #f2f2f2;
+}
+
+@media screen and (max-width: 1054px) {
+    .menu-content li {
+        margin-right: 25px;
+    }
+    .menu {
+        width: 615px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .menu-content,
+    .menu .add-icon,
+    .logo-big {
+        display: none;
+    }
+    .menu .nav-icon {
+        display: block;
+        margin-right: 10px;
+    }
+    .menu .logo-small {
+        display: inline;
+        margin: 5px 0;
+    }
+    .menu {
+        width: 100%;
+    }
+    .search-icon {
+        margin-left: auto;
+    }
+    .input-search {
+        width: calc(100% - 76px);
+    }
+    .info-block {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 15px 0 0;
+    }
+    .footer {
+        padding: 15px 15px;
+    }
+
+    .details {
+        width: calc(100% - 40px);
+        left: 5px;
+    }
+    .det-check-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
